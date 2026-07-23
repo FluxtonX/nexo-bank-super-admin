@@ -124,7 +124,7 @@ export default function DashboardPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-slate-100">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mb-4"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-500 mb-4"></div>
         <p className="text-slate-400 text-sm font-medium">Loading Master Control Panel...</p>
       </div>
     )
@@ -137,12 +137,12 @@ export default function DashboardPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-500/10 border border-blue-500/20 rounded-xl">
-                <ShieldAlert className="h-6 w-6 text-blue-500" />
+              <div className="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
+                <ShieldAlert className="h-6 w-6 text-emerald-500" />
               </div>
               <div>
                 <h1 className="font-bold text-lg text-white leading-tight">Master Control Panel</h1>
-                <p className="text-xs text-slate-400">CDNT Global Infrastructure</p>
+                <p className="text-xs text-slate-400">Nexo Bank Global Infrastructure</p>
               </div>
             </div>
 
@@ -194,7 +194,7 @@ export default function DashboardPage() {
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-2">
           <div className="flex items-center justify-between">
             <h2 className="text-xl sm:text-2xl font-extrabold text-white flex items-center gap-2">
-              <Server className="h-6 w-6 text-blue-500" />
+              <Server className="h-6 w-6 text-emerald-500" />
               <span>System Maintenance Controls</span>
             </h2>
             <button
@@ -245,7 +245,7 @@ export default function DashboardPage() {
               <button
                 onClick={() => openConfirmationModal('client')}
                 disabled={updating !== null}
-                className={`relative inline-flex h-9 w-16 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 ${settings?.client_maintenance ? 'bg-rose-600' : 'bg-emerald-600'
+                className={`relative inline-flex h-9 w-16 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 ${settings?.client_maintenance ? 'bg-rose-600' : 'bg-emerald-600'
                   }`}
               >
                 <span
@@ -289,7 +289,7 @@ export default function DashboardPage() {
               <button
                 onClick={() => openConfirmationModal('admin')}
                 disabled={updating !== null}
-                className={`relative inline-flex h-9 w-16 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 ${settings?.admin_maintenance ? 'bg-rose-600' : 'bg-emerald-600'
+                className={`relative inline-flex h-9 w-16 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 ${settings?.admin_maintenance ? 'bg-rose-600' : 'bg-emerald-600'
                   }`}
               >
                 <span
