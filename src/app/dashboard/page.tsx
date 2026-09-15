@@ -66,7 +66,7 @@ export default function DashboardPage() {
   const openConfirmationModal = (type: 'client' | 'admin') => {
     if (!settings) return
     const isCurrentlyActive = type === 'client' ? settings.client_maintenance : settings.admin_maintenance
-    const appName = type === 'client' ? 'Client App (nexobank.com)' : 'Admin Panel (CDNT-admin-panel)'
+    const appName = type === 'client' ? 'Client App (nexobank.com)' : 'Admin Panel (NDNT-admin-panel)'
 
     setModalState({
       isOpen: true,
@@ -262,7 +262,7 @@ export default function DashboardPage() {
               <div className="flex items-center gap-2">
                 <h3 className="text-lg font-bold text-white">Admin Panel</h3>
                 <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700 font-mono">
-                  CDNT-admin-panel
+                  NDNT-admin-panel
                 </span>
               </div>
               <p className="text-sm text-slate-400">
